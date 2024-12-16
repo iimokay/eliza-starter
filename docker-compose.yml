@@ -7,6 +7,9 @@ services:
       dockerfile: ./Dockerfile
     networks:
       - dockge_default
+    volumes:
+      - ./.env:/app/.env:ro,Z
+      - ./characters:/app/characters:ro,Z
 networks:
   dockge_default:
     external: true
