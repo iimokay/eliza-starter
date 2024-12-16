@@ -10,7 +10,6 @@ WORKDIR /app
 ADD package.json /app/package.json
 ADD tsconfig.json /app/tsconfig.json
 ADD pnpm-lock.yaml /app/pnpm-lock.yaml
-ADD .env /app/.env
 
 ADD src /app/src
 ADD characters /app/characters
